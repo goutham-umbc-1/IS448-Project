@@ -1,0 +1,64 @@
+<!-- Change User Profile Page 
+
+Written by: Alvin Blesson
+Date: 10-18-16
+
+-->
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Change User Profile</title>
+	<link rel="stylesheet" type="text/css" href="app_format.css"/>
+  </head>
+
+  <!-- Start Page Content -->
+  <body class="heading">
+	<h1 class = "large" > Change Voter Profile </h1>
+  <hr />
+  <form name="voter_form" action="" method="post">
+  
+    <!-- Text Box Fields -->
+    <div class= "left">
+    <p>
+    <br/><br/>
+    <label>
+      First Name:<input type="text" name="fname"  />  <br /><br /> 
+    </label>
+    <label>
+      Last Name: <input type="text" name="lname"  /> <br /><br />
+    </label>
+    <label>
+      Address: <input type="text" name="address"  /> <br /><br />
+    </label>  
+    <label>
+      Date of Birth: <input type="text" name="birthday" /> (use mm/dd/yy format) <br /><br />
+    </label>
+  
+    <label>
+    <!-- Set of radio buttons -->
+      Party Affliation: <br/>
+
+      <div class="indent">
+      <input type="radio" name="party" value="Republican" checked="checked" /> Republican <br/>
+      <input type="radio" name="party" value="Democrat" /> Democrat <br/>
+      <input type="radio" name="party" value="Green" /> Green <br/>
+      <input type="radio" name="party" value="Libertarian" /> Libertarian <br/>
+      <input type="radio" name="party" value="Independent" /> Independent <br/>
+      </div>
+    </label>
+
+  <br /><br />
+
+  <label>
+  <!-- Submit button -->
+  <input type="submit" name="submitButton" value="Update My Profile"/>
+  </label>
+  </p>
+  </div>
+  </form>
+
+  <!-- End Page Content -->
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml">
+
+<!--Author: Anderson Chan -->
+
+<!-- composed of the information needed for an FAQ page for online voter registration
+FAQ page 
+Inputs: user selection from questions, option to ‘contact support/request help’(display a message box and contact info)
+Interactions: query DB & display requested information, or transfer user to support page, input data to DB & forward to support team, transfer user to confirmation page
+-->
+	
+<head>
+	<link rel="stylesheet" type="text/css" href="./faq_format.css" title="style" />
+	<title> Voter Registration FAQ </title>
+</head>
+
+<body>
+
+<div class = "faq">
+
+	<h1 class = "heading"> Welcome to the FAQ page! </h1>
+	<h3 class = "italic"> Please select a topic below to find answers to common questions. </h3>
+	
+	<div class="menu-wrap">
+    <nav class="menu">
+        <ul class="clearfix">
+            <li>
+				<a href="#">Voter Registration Eligibility</a>
+				<ul class="sub-menu">
+                    <li><a href="#">Am I Eligible?</a></li>
+                    <li><a href="#">Military or Overseas?</a></li>
+                    <li><a href="#">Criminal Record?</a></li>  
+                </ul>
+			</li>
+			
+            <li>
+                <a href="#">How It Works</a>
+                <ul class="sub-menu">
+                    <li><a href="#">When Do I Register?</a></li>
+                    <li><a href="#">Where Do I Register?</a></li>
+                    <li><a href="#">How Can I Register (Online/Mail)?</a></li>
+                    <li><a href="#">Necessary Documents</a></li>
+                </ul>
+            </li>
+			
+            <li>
+				<a href="#">Registration Verification</a>
+				<ul class="sub-menu">
+                    <li><a href="#">When Do I Know?</a></li>
+                    <li><a href="#">Where Do I Check?</a></li>
+                    <li><a href="#">Who Do I Contact?</a></li>
+                </ul>
+			</li>
+			
+            <li>
+				<a href="#">Updating Registration</a>
+				<ul class="sub-menu">
+                    <li><a href="#">How Do I Update My Informaton?</a></li>
+                    <li><a href="#">When Do I Need To Update My Information?</a></li>
+                </ul>
+			</li>
+			
+            <li>
+				<a href="#">Political Affiliation</a>
+				<ul class="sub-menu">
+                    <li><a href="#">Can I Change My Political Party?</a></li>
+                    <li><a href="#">Where Can I Find More Info on Political Parties?</a></li>
+                </ul>
+			</li>
+        </ul>
+    </nav>
+	</div>
+	<br/>
+			
+<p class= "box">
+	<form name="support" action="" method="POST">
+	<p class = "bold">
+		<label>
+		Contact Support: <br/> <textarea name="comments" class="commentbox"> </textarea>
+		</label><br/>
+		<input type="submit" value="Submit" />
+		<input type="reset" value="Clear" />
+	</p>
+	</form>
+</p>
+
+
+</div>
+
+</body>
+</html>

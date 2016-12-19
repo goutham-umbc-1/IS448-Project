@@ -1,0 +1,48 @@
+.bold { 
+		font-weight: bold; 
+}
+
+.background { 
+	   font-family: sans-serif;
+	   background-color: lightblue; 
+	   padding: 7px; 
+}
+
+.heading {
+		text-align: center; 
+	    background-color: crimson; }
+
+.italic { 
+		font-style: italic; 
+}
+
+.large { 
+		font-size: 24pt; 
+		 font-weight: bold;
+}
+
+.center {
+		text-align: center;
+}
+.left {
+		text-align: left;
+}
+
+.indent {
+		margin-left: 100px;
+}
+
+.redBorder {
+		border: 5px red solid;
+}
+.button {
+    display: block;
+    width: 200px;
+    height: 25px;
+    background-color: crimson;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+	border: 1px solid black;
+}

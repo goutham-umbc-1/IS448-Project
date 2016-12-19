@@ -1,0 +1,135 @@
+/*
+IS448 Project CSS 
+	for faqpage.html
+*/
+
+.bold { font-weight: bold;
+		color: red;
+}
+
+.heading { text-align: center; 
+	      background-color: crimson; 
+}
+
+.italic { font-style: italic; }
+
+div {
+	margin: 10%;
+	text-align: center;
+}
+
+div.faq {
+	background-color: blue;
+}
+
+.box {
+	text-align: left;
+}
+
+.commentbox {
+	overflow: auto;
+	font-family: verdana, sans-serif;
+}
+
+/*ONLINE TUTORIAL REFERENCED (until javascript and php added anyways...)*/
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:80%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:lightblue;
+}
+
+.menu {
+    width:100%;
+    margin:0px auto;
+}
+
+.menu li {
+    margin:0px;
+    list-style:none;
+}
+
+.menu a {
+    transition:all linear 0.15s;
+    color:red;
+}
+
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:lightblue;
+}
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:center;
+    display:inline-block;
+    position:relative;
+    font-size:15px;
+}
+
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:green;
+}
+/*----- Bottom Level -----*/
+.sub-menu {
+    width:100%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+.sub-menu li {
+    display:block;
+    font-size:14px;
+}
+
+.sub-menu li a {
+    padding:10px 20px;
+    display:block;
+}
+
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
